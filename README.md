@@ -331,8 +331,4 @@ For questions about the Flask application:
 
 ## 📄 License
 
-This project is created for educational and demonstration purposes. The original Cuba Educational Travel brand and content belong to their respective owners.
-
----
-
-**Ready for Production**: This Flask application is complete, secure, and ready for deployment with no placeholder content anywhere on the site.
+This project is created for educational and demonstration purposes.
