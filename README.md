@@ -1,7 +1,5 @@
 # Cuba Educational Travel - Flask Web Application
 
-A complete, production-ready Flask recreation of the Cuba Educational Travel website (cubaeducationaltravel.com) with improved text contrast and professional design.
-
 ## 🚀 Features
 
 - **Complete Website**: All pages fully implemented with professional content - no placeholders
