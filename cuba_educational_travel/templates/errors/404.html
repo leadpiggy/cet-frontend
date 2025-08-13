@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Page Not Found - {{ company_info.name }}{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <div class="py-5">
+                    <h1 class="display-1 text-primary">404</h1>
+                    <h2 class="mb-4">Page Not Found</h2>
+                    <p class="lead mb-4">Sorry, the page you are looking for could not be found. It may have been moved or no longer exists.</p>
+                    <p class="mb-4">But don't worry - there's still plenty to explore about Cuba!</p>
+
+                    <div class="mb-5">
+                        <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg me-3">Go Home</a>
+                        <a href="{{ url_for('contact') }}" class="btn btn-outline-primary btn-lg">Contact Us</a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <i class="fas fa-plane fa-2x text-primary mb-3"></i>
+                                    <h5>Plan Your Trip</h5>
+                                    <p class="small">Explore our travel programs</p>
+                                    <a href="{{ url_for('travel_private') }}" class="btn btn-sm btn-outline-primary">View Programs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <i class="fas fa-book fa-2x text-primary mb-3"></i>
+                                    <h5>Learn About Cuba</h5>
+                                    <p class="small">Read our blog and insights</p>
+                                    <a href="{{ url_for('blog') }}" class="btn btn-sm btn-outline-primary">Read Blog</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                                    <h5>Stay Connected</h5>
+                                    <p class="small">Subscribe to our newsletter</p>
+                                    <a href="{{ url_for('newsletter') }}" class="btn btn-sm btn-outline-primary">Subscribe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

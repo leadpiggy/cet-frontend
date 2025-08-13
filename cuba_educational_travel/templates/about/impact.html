@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Our Impact - {{ company_info.name }}{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h1 class="display-4 mb-4">Our Impact in Cuba</h1>
+                <p class="lead">For over a decade, CET has been at the forefront of fostering meaningful connections between the U.S. and Cuba while supporting Cuban communities and entrepreneurs.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Building Bridges</h2>
+                <p>Cuba Educational Travel has facilitated meaningful exchanges between thousands of Americans and Cubans, creating lasting relationships that transcend political barriers. Our work extends far beyond tourism—we are actively involved in supporting Cuban civil society, entrepreneurship, and cultural development.</p>
+                <p>Through our sister organizations, <strong>Havana Strategies</strong> and the <strong>Caribbean Arts & Entrepreneurship Corporation</strong>, we provide business consulting, entrepreneurship training, and cultural programming that directly benefits Cuban communities.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Community Impact" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+        <div class="bg-light p-5 rounded mb-5">
+            <h4 class="text-center mb-4">Impact by the Numbers</h4>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <h2 class="text-primary">10,000+</h2>
+                    <p>Americans who have traveled to Cuba with CET</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h2 class="text-primary">500+</h2>
+                    <p>Cuban entrepreneurs supported through our programs</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h2 class="text-primary">100+</h2>
+                    <p>U.S. organizations that have partnered with us</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h2 class="text-primary">15+</h2>
+                    <p>Years of fostering U.S.-Cuba relations</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h4 class="mb-4">Our Commitment</h4>
+                <p class="mb-4">CET believes that meaningful people-to-people connections are the foundation for positive change. Every trip we organize, every program we develop, and every relationship we foster contributes to a more connected and understanding world.</p>
+                <a href="{{ url_for('about_story') }}" class="btn btn-primary me-3">Learn Our Story</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-outline-primary">Partner With Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}The CET Story - {{ company_info.name }}{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4 text-center mb-5">The CET Story</h1>
+
+                <div class="lead mb-4">
+                    Cuba Educational Travel (CET) is the leading organization in connecting the people of the U.S. and Cuba through travel.
+                </div>
+
+                <p class="mb-4">
+                    Founded by {{ company_info.founder }}, CET offers cultural, educational, event and incentive and luxury travel to Cuba, working with clients to develop unique, customized and heavily-curated experiences on the island.
+                </p>
+
+                <p class="mb-4">
+                    CET believes deeply in the value of bringing our two countries together and has worked hard to introduce important U.S. policymakers, companies, organizations and thought leaders to Cuba.
+                </p>
+
+                <p class="mb-4">
+                    CET promotes policies that are beneficial to both countries and has been on the forefront of empowering Cuban entrepreneurs, supporting Cuban cultural and educational institutions and neighborhood projects, and promoting sustainable tourism.
+                </p>
+
+                <p class="mb-4">
+                    CET enjoys an unrivaled reputation and special place in U.S.-Cuba relations and Cuba travel. CET's sister company <strong>Havana Strategies</strong>, a boutique business consultancy, has worked with numerous U.S. enterprises on their entry into the Cuban market. CET's non-profit arm, the <strong>Caribbean Arts & Entrepreneurship Corporation</strong>, provides workshops, trainings and internships for Cuban entrepreneurs, scholarships for Cuban students and support for cultural programs.
+                </p>
+
+                <p class="mb-4">
+                    Finally, Cuba Educational Travel is a leading voice on ending the embargo on Cuba and highly active in the policy space.
+                </p>
+
+                <p class="mb-5">
+                    CET is now a sizeable team of young Cubans and Americans working together to help better our two countries' relationship through travel, exchanges, and unforgettable experiences.
+                </p>
+
+                <div class="bg-light p-4 rounded mb-5">
+                    <h4 class="mb-3">What Makes CET Different</h4>
+                    <p><strong>Traveling with CET means much more than just visiting Cuba.</strong></p>
+                    <p class="mb-0">Traveling with CET means unparalleled access, deep connections, supporting artists and entrepreneurs, promoting sustainable development and pushing for effective policies and better bilateral relations.</p>
+                </div>
+
+                <div class="text-center">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg me-3">Work With Us</a>
+                    <a href="{{ url_for('about_impact') }}" class="btn btn-outline-primary btn-lg">See Our Impact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Events in Cuba - {{ company_info.name }}{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h1 class="display-4 mb-4">Events in Cuba</h1>
+                <p class="lead">Join special conferences, cultural festivals, and exclusive events that provide unique insights into Cuban society and culture.</p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Exclusive Event Access</h2>
+                <p>CET provides exclusive access to Cuba's most significant cultural, academic, and business events. From international conferences to intimate cultural celebrations, our event-based programs offer participants the opportunity to engage with Cuban society during moments of particular significance.</p>
+                <p>Our events range from academic symposiums and business forums to cultural festivals and artistic exhibitions, each carefully selected to provide meaningful cultural exchange and learning opportunities.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Cuba Events" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+        <div class="bg-light p-4 rounded mb-5">
+            <h4 class="mb-3">Upcoming Events</h4>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h6>Havana Jazz Festival</h6>
+                    <p class="small text-muted">December 2024</p>
+                    <p class="small">Join Cuba's premier jazz celebration with performances by international and Cuban artists.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6>International Book Fair</h6>
+                    <p class="small text-muted">February 2025</p>
+                    <p class="small">Literary celebration featuring Cuban and international authors, publishers, and cultural figures.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6>Havana Biennial</h6>
+                    <p class="small text-muted">Spring 2025</p>
+                    <p class="small">Contemporary art exhibition showcasing works from Cuba, Latin America, and the Caribbean.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h4 class="mb-3">Join Us for Cuba's Premier Events</h4>
+                <p class="mb-4">Experience Cuba during its most vibrant cultural and academic moments. Our event-based programs provide unique access and insider perspectives.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg me-3">Reserve Your Spot</a>
+                <a href="{{ url_for('newsletter') }}" class="btn btn-outline-primary btn-lg">Get Event Notifications</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
