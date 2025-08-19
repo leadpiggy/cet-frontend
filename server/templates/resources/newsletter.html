@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}The Newsletter - {{ company_info.name }}{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h1 class="display-4 mb-4">The CET Newsletter</h1>
+                <p class="lead">Stay informed about Cuba travel, policy updates, cultural events, and exclusive opportunities with our monthly newsletter.</p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Stay Connected to Cuba</h2>
+                <p>Our monthly newsletter provides subscribers with insider insights into Cuban culture, politics, business, and travel. Written by our team of Cuba experts, including founder {{ company_info.founder.split(',')[0] }}, the newsletter offers analysis and updates you won't find anywhere else.</p>
+                <p>Subscribers receive exclusive access to special programs, early booking opportunities, and invitations to CET events both in Cuba and the United States.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Newsletter" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card shadow-lg">
+                    <div class="card-body p-5">
+                        <h3 class="text-center mb-4">Subscribe to Our Newsletter</h3>
+                        <form id="newsletter-form" class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" name="first_name" required>
+                                    <div class="invalid-feedback">Please provide your first name.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" name="last_name" required>
+                                    <div class="invalid-feedback">Please provide your last name.</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Areas of Interest</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="travel" id="travel">
+                                            <label class="form-check-label" for="travel">Cuba Travel Programs</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="business" id="business">
+                                            <label class="form-check-label" for="business">Business Opportunities</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="culture" id="culture">
+                                            <label class="form-check-label" for="culture">Cuban Culture & Arts</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="policy" id="policy">
+                                            <label class="form-check-label" for="policy">Policy & Relations</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">Subscribe Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light p-4 rounded">
+            <h4 class="text-center mb-4">Recent Newsletter Topics</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <h6>March 2024: "Cuba's New Economic Measures"</h6>
+                    <p class="small">Analysis of recent economic reforms and their impact on travel and business.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6>February 2024: "Havana's Art Renaissance"</h6>
+                    <p class="small">Spotlight on contemporary Cuban artists and the thriving Havana art scene.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6>January 2024: "Educational Exchange Growth"</h6>
+                    <p class="small">Updates on expanding academic partnerships and student programs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

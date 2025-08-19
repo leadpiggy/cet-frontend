@@ -1,0 +1,35 @@
+# Python / Flask
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+ENV/
+env/
+instance/
+*.db
+*.sqlite*
+*.log
+.pytest_cache/
+.coverage*
+htmlcov/
+.tox/
+
+# Env / secrets
+.env
+.env.*
+*.env
+.envrc
+!.env.example
+!.env.template
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Keep CI/CD tracked
+!appspec.yml
+!buildspec.yml
+!codedeploy/**
