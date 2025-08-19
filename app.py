@@ -3,12 +3,12 @@ from flask_wtf.csrf import CSRFProtect
 import os
 from datetime import datetime
 from dotenv import load_dotenv
+from server.webhooks import webhook_bp
+from server import create_app
 
 load_dotenv()
 
-app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'cuba-educational-travel-secret-key-2024')
-
+app = create_app()
 csrf = CSRFProtect(app)
 
 # Company information
@@ -246,4 +246,4 @@ def internal_error(error):
     return render_template('errors/500.html'), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5600)

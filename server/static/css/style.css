@@ -1,0 +1,424 @@
+/* Cuba Educational Travel - Main Stylesheet */
+
+/* Cuban-inspired color palette with improved readability */
+:root {
+    --cuba-blue: #1b4d6b;
+    --cuba-teal: #2b8ca3;
+    --cuba-teal-dark: #1e5f6f;  /* Darker for body text links */
+    --cuba-gold: #d4af37;
+    --cuba-coral: #ff6b5b;
+    --cuba-cream: #f8f5f0;
+
+    /* Text colors for better contrast */
+    --body-text: #333333;        /* Dark gray for body text */
+    --heading-text: #2c3e50;     /* Dark blue-gray for headings */
+    --light-text: #555555;       /* Slightly lighter for secondary text */
+    --link-color: #1e5f6f;       /* Darker teal for links */
+}
+
+/* Global text styling for better readability */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--body-text);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Heading styles with better contrast */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-text);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+h1 { font-size: 2.5rem; font-weight: 700; }
+h2 { font-size: 2rem; font-weight: 600; }
+h3 { font-size: 1.75rem; font-weight: 600; }
+h4 { font-size: 1.5rem; font-weight: 600; }
+h5 { font-size: 1.25rem; font-weight: 600; }
+h6 { font-size: 1rem; font-weight: 600; }
+
+/* Paragraph and body text */
+p, li, span, div {
+    color: var(--body-text);
+}
+
+/* Lead text - slightly larger, still readable */
+.lead {
+    color: var(--light-text);
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+/* Link styling for body content */
+a:not(.navbar-brand):not(.nav-link):not(.dropdown-item):not(.btn) {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:not(.navbar-brand):not(.nav-link):not(.dropdown-item):not(.btn):hover {
+    color: var(--cuba-blue);
+    text-decoration: underline;
+}
+
+/* Form elements with better contrast */
+.form-label {
+    color: var(--heading-text);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    border: 2px solid #e9ecef;
+    color: var(--body-text);
+    font-size: 16px;
+    padding: 0.75rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--cuba-teal);
+    box-shadow: 0 0 0 0.2rem rgba(43, 140, 163, 0.25);
+    color: var(--body-text);
+}
+
+/* Button styling */
+.bg-primary {
+    background-color: var(--cuba-blue) !important;
+}
+
+.text-primary {
+    color: var(--cuba-teal) !important;
+}
+
+.btn-primary {
+    background-color: var(--cuba-teal);
+    border-color: var(--cuba-teal);
+    font-weight: 500;
+    padding: 0.75rem 2rem;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--cuba-blue);
+    border-color: var(--cuba-blue);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    color: var(--cuba-teal);
+    border-color: var(--cuba-teal);
+    font-weight: 500;
+    padding: 0.75rem 2rem;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--cuba-teal);
+    border-color: var(--cuba-teal);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-lg {
+    padding: 1rem 2.5rem;
+    font-size: 18px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: white !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: var(--cuba-teal) !important;
+    font-weight: 700 !important;
+    font-size: 1.75rem;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: var(--cuba-blue) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--body-text);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: var(--cuba-teal);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    color: var(--body-text);
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: var(--cuba-cream);
+    color: var(--cuba-teal);
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(135deg, var(--cuba-blue) 0%, var(--cuba-teal) 100%);
+    padding: 6rem 0;
+}
+
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section p,
+.hero-section li {
+    color: white !important;
+}
+
+.hero-section .lead {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1.25rem;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card-title {
+    color: var(--heading-text);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: var(--body-text);
+    line-height: 1.6;
+}
+
+/* Testimonial cards */
+.blockquote {
+    color: var(--body-text);
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.blockquote-footer {
+    color: var(--light-text);
+    margin-top: 1rem;
+}
+
+.blockquote-footer strong {
+    color: var(--heading-text);
+}
+
+/* Alert styling */
+.alert {
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Footer styling */
+footer {
+    background-color: #212529 !important;
+    color: white;
+    padding: 3rem 0 2rem 0;
+}
+
+footer h5,
+footer h6,
+footer p,
+footer a {
+    color: #ffffff !important;
+}
+
+footer a:hover {
+    color: var(--cuba-teal) !important;
+    text-decoration: none;
+}
+
+footer .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+    background-color: var(--cuba-teal);
+    transform: translateY(-2px);
+}
+
+/* List styling */
+.list-unstyled li,
+ul li,
+ol li {
+    color: var(--body-text);
+    margin-bottom: 0.5rem;
+}
+
+.list-unstyled li i {
+    color: var(--cuba-teal);
+    margin-right: 0.5rem;
+}
+
+/* FAQ styling */
+.faq-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.faq-question {
+    color: var(--heading-text);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.faq-answer {
+    color: var(--body-text);
+    line-height: 1.7;
+}
+
+/* Blog styling */
+.blog-post-card {
+    transition: all 0.3s ease;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-category {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+
+    .hero-section {
+        padding: 4rem 0;
+    }
+
+    .btn-lg {
+        padding: 0.875rem 2rem;
+        font-size: 16px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    outline: 2px solid var(--cuba-teal);
+    outline-offset: 2px;
+}
+
+/* Utility classes */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.text-muted {
+    color: var(--light-text) !important;
+}
+
+.border-primary {
+    border-color: var(--cuba-teal) !important;
+}
+
+/* Special styling for dark backgrounds */
+.bg-primary *,
+.bg-dark *,
+.hero-section *,
+footer * {
+    color: white !important;
+}
+
+.bg-primary a:not(.btn),
+.bg-dark a:not(.btn),
+.hero-section a:not(.btn),
+footer a:not(.btn) {
+    color: #ffffff !important;
+}
+
+.bg-primary a:not(.btn):hover,
+.bg-dark a:not(.btn):hover,
+.hero-section a:not(.btn):hover,
+footer a:not(.btn):hover {
+    color: var(--cuba-teal) !important;
+}
+
+/* Loading and smooth transitions */
+* {
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Print styles */
+@media print {
+    .navbar, footer, .btn {
+        display: none !important;
+    }
+
+    body {
+        color: #000 !important;
+        background: #fff !important;
+    }
+}

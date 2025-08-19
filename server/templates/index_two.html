@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuba Educational Travel - Legal Cultural Travel to Cuba</title>
+    <meta name="description" content="Cuba Educational Travel offers legal, licensed cultural and educational travel to Cuba. Led by Collin Laverty, expert in U.S.-Cuba relations.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="navigateTo('home')">
+                <strong>Cuba Educational Travel</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="cubaTravel" role="button" data-bs-toggle="dropdown">
+                            Cuba Travel
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('people-to-people')">People to People</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('private')">Private Trips</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('academic')">Academic Programs</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('luxury')">CET Luxury</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('corporate')">Corporate Travel</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('events')">Events in Cuba</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutCET" role="button" data-bs-toggle="dropdown">
+                            About CET
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('about')">The CET Story</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('impact')">Impact</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('news')">In the News</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('testimonials')">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('business')">Business in Cuba</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('faqs')">FAQs</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('contact')">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="navigateTo('newsletter')">The Newsletter</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigateTo('blog')">The Cuba Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- Homepage Content -->
+        <div id="home-page" class="page-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h1 class="hero-title">Experience Authentic Cuba</h1>
+                            <p class="hero-subtitle">With decades of experience and a dynamic team on the ground, CET produces unforgettable programs, from family trips to academic travel to corporate retreats.</p>
+                            <div class="hero-cta">
+                                <button class="btn btn--primary btn--lg me-3" onclick="navigateTo('contact')">Plan Your Trip</button>
+                                <button class="btn btn--outline btn--lg" onclick="navigateTo('about')">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hero-image">
+                                <img src="https://pplx-res.cloudinary.com/image/upload/v1755069830/pplx_project_search_images/3ed5ea91c500e40e93fc45784e6a0b19b1d67f6f.png" alt="Colorful colonial buildings in Havana, Cuba" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Who We Work With Section -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card__body">
+                                    <h2>WHO WE WORK WITH</h2>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-primary me-2"></i>Universities and Academic Institutions</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Corporate Groups and Executives</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Family Groups and Private Travelers</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Non-profit Organizations</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Cultural and Educational Institutions</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Medical and Professional Associations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card__body">
+                                    <h2>WHO WE ARE</h2>
+                                    <p>Cuba Educational Travel is a team of young Cubans and Americans working together to help better the relationship between our two countries through legal travel, exchanges, and unforgettable experiences.</p>
+                                    <p>Run by Collin Laverty, a leading expert on U.S.-Cuba relations, CET is legal and licensed by the Cuban and US governments.</p>
+                                    <div class="contact-info">
+                                        <p><strong>Contact:</strong> <a href="mailto:info@cubaeducationaltravel.com">info@cubaeducationaltravel.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cultural Experience Section -->
+            <section class="cultural-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755069830/pplx_project_search_images/6afc45b51224eebb90656a2c3474ef8d49f6d93e.png" alt="Cuban cultural performance with traditional music and dance" class="img-fluid rounded">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2>Immersive Cultural Experiences</h2>
+                            <p>Our programs offer authentic interactions with Cuban culture, from traditional music and dance performances to visits with local artists, educators, and community leaders.</p>
+                            <p>Experience Cuba through the eyes of locals and gain deep insights into the island's rich history, vibrant arts scene, and resilient people.</p>
+                            <button class="btn btn--primary" onclick="navigateTo('private')">Explore Programs</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about-page" class="page-content hidden">
+            <div class="container section-padding">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1>The CET Story</h1>
+                        <p class="lead">Cuba Educational Travel (CET) is the leading organization in connecting the people of the U.S. and Cuba through travel.</p>
+                        
+                        <div class="story-content">
+                            <p>Founded by Collin Laverty, a leading expert on U.S.-Cuba relations, CET offers cultural, educational, event and incentive and luxury travel to Cuba, working with clients to develop unique, customized and heavily-curated experiences on the island.</p>
+                            
+                            <p>CET believes deeply in the value of bringing our two countries together and has worked hard to introduce important U.S. policymakers, companies, organizations and thought leaders to Cuba. CET promotes policies that are beneficial to both countries and has been on the forefront of empowering Cuban entrepreneurs, supporting Cuban cultural and educational institutions and neighborhood projects, and promoting sustainable tourism.</p>
+                            
+                            <h3>Our Mission</h3>
+                            <p>We are a team of young Cubans and Americans working together to help better the relationship between our two countries through legal travel, exchanges, and unforgettable experiences.</p>
+                            
+                            <h3>Legal and Licensed</h3>
+                            <p>CET is legal and licensed by both the Cuban and US governments, ensuring that all our programs comply with current regulations and provide peace of mind for our travelers.</p>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="contact-form-section mt-5">
+                            <h3>Get in Touch</h3>
+                            <form id="contact-form" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="firstName">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="lastName">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn--primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Private Trips Page -->
+        <div id="private-page" class="page-content hidden">
+            <div class="container section-padding">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1>Private Trips to Cuba</h1>
+                        <p class="lead">Custom Cuba programs designed specifically for your interests and group size.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-lg-6">
+                                <img src="https://pplx-res.cloudinary.com/image/upload/v1755069830/pplx_project_search_images/dcda64bab31ddc330a7983d90eb987c5375c7e1f.png" alt="Colorful colonial buildings in Havana" class="img-fluid rounded mb-4">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>Customized Experiences</h3>
+                                <p>We create tailored programs for groups of 2 to 200 participants, focusing on authentic cultural exchanges and educational experiences.</p>
+                                
+                                <h4>Group Sizes</h4>
+                                <p>From intimate family trips for 2 people to large corporate groups of up to 200 participants.</p>
+                            </div>
+                        </div>
+
+                        <h3>Thematic Trip Options</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="theme-list">
+                                    <li><i class="fas fa-seedling text-primary me-2"></i>Agriculture</li>
+                                    <li><i class="fas fa-music text-primary me-2"></i>Arts and Music</li>
+                                    <li><i class="fas fa-utensils text-primary me-2"></i>Cuisine</li>
+                                    <li><i class="fas fa-graduation-cap text-primary me-2"></i>Education</li>
+                                    <li><i class="fas fa-leaf text-primary me-2"></i>Environment</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="theme-list">
+                                    <li><i class="fas fa-heartbeat text-primary me-2"></i>Health Care</li>
+                                    <li><i class="fas fa-tshirt text-primary me-2"></i>Fashion</li>
+                                    <li><i class="fas fa-flask text-primary me-2"></i>Science</li>
+                                    <li><i class="fas fa-running text-primary me-2"></i>Sports</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cta-section mt-5">
+                            <div class="card">
+                                <div class="card__body text-center">
+                                    <h3>Ready to Plan Your Trip?</h3>
+                                    <p>Contact us to discuss your custom Cuba experience.</p>
+                                    <button class="btn btn--primary" onclick="navigateTo('contact')">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Academic Programs Page -->
+        <div id="academic-page" class="page-content hidden">
+            <div class="container section-padding">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1>Academic Programs</h1>
+                        <p class="lead">Educational travel programs designed for universities, schools, and academic institutions.</p>
+                        
+                        <div class="academic-content">
+                            <h3>University Partnerships</h3>
+                            <p>We work closely with universities and academic institutions to create meaningful educational experiences that complement curriculum and research objectives.</p>
+                            
+                            <h3>Custom Program Development</h3>
+                            <p>Our team collaborates with educators to develop programs that meet specific learning outcomes and academic goals, ensuring a valuable educational experience for students and faculty.</p>
+                            
+                            <h3>Research Opportunities</h3>
+                            <p>Academic programs can include research components, allowing students and faculty to engage with Cuban academics, visit research institutions, and explore topics of mutual interest.</p>
+                            
+                            <div class="academic-features mt-4">
+                                <h4>Program Features:</h4>
+                                <ul>
+                                    <li>Academic lectures and seminars</li>
+                                    <li>Visits to Cuban universities and research centers</li>
+                                    <li>Meetings with Cuban academics and professionals</li>
+                                    <li>Cultural immersion activities</li>
+                                    <li>Service learning opportunities</li>
+                                    <li>Language exchange programs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Corporate Travel Page -->
+        <div id="corporate-page" class="page-content hidden">
+            <div class="container section-padding">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1>Corporate Travel</h1>
+                        <p class="lead">Professional travel services for businesses looking to explore opportunities in Cuba.</p>
+                        
+                        <div class="corporate-content">
+                            <h3>Business Travel Services</h3>
+                            <p>We provide comprehensive travel services for corporations interested in understanding the Cuban market, exploring business opportunities, and building professional relationships.</p>
+                            
+                            <h3>Corporate Retreats</h3>
+                            <p>Cuba offers a unique setting for corporate retreats that combine team building, professional development, and cultural enrichment in a memorable environment.</p>
+                            
+                            <h3>Professional Networking</h3>
+                            <p>Our programs facilitate connections between international business professionals and their Cuban counterparts, fostering dialogue and collaboration.</p>
+                            
+                            <div class="corporate-services mt-4">
+                                <h4>Services Include:</h4>
+                                <ul>
+                                    <li>Market research and analysis</li>
+                                    <li>Business meetings and networking events</li>
+                                    <li>Site visits and facility tours</li>
+                                    <li>Legal and regulatory briefings</li>
+                                    <li>Executive accommodation and dining</li>
+                                    <li>Ground transportation and logistics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Page -->
+        <div id="testimonials-page" class="page-content hidden">
+            <div class="container section-padding">
+                <h1 class="text-center mb-5">What Our Clients Say</h1>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="card">
+                            <div class="card__body">
+                                <blockquote>
+                                    <p>"If you want to get to know Cuba from the inside out…if you want to experience the authentic, down-to-earth Cuba…if you want to create beautiful memories for a lifetime, here's your solution: visit Cuba with CET! For the first-class professionals at Cuba Educational Travel, tourism is so much more than a job, it's a moral commitment to building lasting bonds between international visitors and their many wonderful friends and colleagues in their beloved Cuba."</p>
+                                </blockquote>
+                                <cite>
+                                    <strong>Richard Feinberg</strong><br>
+                                    Professor, UCSB, and author of Cuba: Open for Business
+                                </cite>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="card">
+                            <div class="card__body">
+                                <blockquote>
+                                    <p>"CET's incredible team and on-the-ground knowledge is critically important to Engage Cuba and everyone who cares about U.S.-Cuba relations. Their real-time insights are essential to the policy discussions in D.C. and Havana."</p>
+                                </blockquote>
+                                <cite>
+                                    <strong>James Williams</strong><br>
+                                    President, Engage Cuba
+                                </cite>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="card">
+                            <div class="card__body">
+                                <blockquote>
+                                    <p>"We partnered with CET to plan an educational trek for Harvard Kennedy School students and several cultural trips for Stanford Business School students. They offer the highest quality network across political and business communities in Cuba. As a Cuban American, I wanted a rich, diverse experience -- and CET delivered."</p>
+                                </blockquote>
+                                <cite>
+                                    <strong>Sara Egozi</strong><br>
+                                    MBA/MPA Candidate at Stanford GSB and Harvard Kennedy School
+                                </cite>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="card">
+                            <div class="card__body">
+                                <blockquote>
+                                    <p>"Having travelled to Cuba dozens of times since 1973 for academic research, I was very familiar with the challenges involved. Cuba Educational Travel eliminates most of the hurdles for academic, cultural and scientific exchanges and is particularly astute in designing tailor-made programs to accommodate a wide variety of interests. CET combines professionalism with know-how."</p>
+                                </blockquote>
+                                <cite>
+                                    <strong>Meg Crahan</strong><br>
+                                    Senior Research Scholar and Director of the Cuba Program at Columbia University
+                                </cite>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="card">
+                            <div class="card__body">
+                                <blockquote>
+                                    <p>"The New York Section of the American Urological Association has an annual meeting every year. This year, we chose to have our meeting in Havana Cuba, jointly with the Cuban Urologic Association. This year's meeting in Cuba was an unforgettable experience and could not have been successful without the onsite assistance of CET..."</p>
+                                </blockquote>
+                                <cite>
+                                    <strong>Mitchell C. Benson, M.D.</strong><br>
+                                    President, NY Section AUA
+                                </cite>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="card">
+                            <div class="card__body">
+                                <blockquote>
+                                    <p>"Cuba Educational Travel provides me with reliable counsel, proven advice and amazing general support. They know Cuba in and out, from safety to genuine grassroots experiences. I trust their guidance and expertise more than any other group involved in Cuba travel."</p>
+                                </blockquote>
+                                <cite>
+                                    <strong>Mike Evans</strong><br>
+                                    Founder of Full Court Peace, over 30 trips to Cuba
+                                </cite>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="card">
+                            <div class="card__body">
+                                <blockquote>
+                                    <p>"I want to thank the CET team for making this a very memorable event for all our guests. The personal attention from arrival, all the activities, meals, discussions and the ultimate departure was flawlessly executed and greatly appreciated by all. Many of our customers commented on how their perception of Cuba was vastly different than what they actually experienced in Cuba."</p>
+                                </blockquote>
+                                <cite>
+                                    <strong>Mario Recchia</strong><br>
+                                    WorldPac Senior VP
+                                </cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact-page" class="page-content hidden">
+            <div class="container section-padding">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1>Contact Us</h1>
+                        <p class="lead">Ready to plan your Cuba experience? Get in touch with our team.</p>
+                        
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form id="main-contact-form" class="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="contactFirstName">First Name</label>
+                                                <input type="text" class="form-control" id="contactFirstName" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="contactLastName">Last Name</label>
+                                                <input type="text" class="form-control" id="contactLastName" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="contactEmail">Email</label>
+                                        <input type="email" class="form-control" id="contactEmail" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="contactPhone">Phone (Optional)</label>
+                                        <input type="tel" class="form-control" id="contactPhone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="tripType">Type of Trip</label>
+                                        <select class="form-control" id="tripType">
+                                            <option value="">Select trip type</option>
+                                            <option value="private">Private Trip</option>
+                                            <option value="academic">Academic Program</option>
+                                            <option value="corporate">Corporate Travel</option>
+                                            <option value="people-to-people">People to People</option>
+                                            <option value="luxury">CET Luxury</option>
+                                            <option value="events">Events in Cuba</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="contactMessage">Message</label>
+                                        <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn--primary">Send Message</button>
+                                </form>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-info">
+                                    <h3>Get In Touch</h3>
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope text-primary"></i>
+                                        <div>
+                                            <strong>Email</strong><br>
+                                            <a href="mailto:info@cubaeducationaltravel.com">info@cubaeducationaltravel.com</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item">
+                                        <i class="fas fa-globe text-primary"></i>
+                                        <div>
+                                            <strong>Legal & Licensed</strong><br>
+                                            Licensed by Cuban and US governments
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item">
+                                        <i class="fas fa-users text-primary"></i>
+                                        <div>
+                                            <strong>Expert Team</strong><br>
+                                            Decades of experience in Cuba travel
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Pages (placeholder content) -->
+        <div id="people-to-people-page" class="page-content hidden">
+            <div class="container section-padding">
+                <h1>People to People Programs</h1>
+                <p>Educational exchanges that promote people-to-people contact between the United States and Cuba.</p>
+            </div>
+        </div>
+
+        <div id="luxury-page" class="page-content hidden">
+            <div class="container section-padding">
+                <h1>CET Luxury</h1>
+                <p>Premium travel experiences with the finest accommodations and exclusive access.</p>
+            </div>
+        </div>
+
+        <div id="events-page" class="page-content hidden">
+            <div class="container section-padding">
+                <h1>Events in Cuba</h1>
+                <p>Corporate events, conferences, and special occasions in Cuba.</p>
+            </div>
+        </div>
+
+        <div id="impact-page" class="page-content hidden">
+            <div class="container section-padding">
+                <h1>Our Impact</h1>
+                <p>How CET is making a difference in U.S.-Cuba relations through travel and cultural exchange.</p>
+            </div>
+        </div>
+
+        <div id="news-page" class="page-content hidden">
+            <div class="container section-padding">
+                <h1>In the News</h1>
+                <p>Recent media coverage and press mentions of Cuba Educational Travel.</p>
+            </div>
+        </div>
+
+        <div id="business-page" class="page-content hidden">
+            <div class="container section-padding">
+                <h1>Business in Cuba</h1>
+                <p>Resources and information for businesses interested in the Cuban market.</p>
+            </div>
+        </div>
+
+        <div id="faqs-page" class="page-content hidden">
+            <div class="container section-padding">
+                <h1>Frequently Asked Questions</h1>
+                <p>Common questions about travel to Cuba and our services.</p>
+            </div>
+        </div>
+
+        <div id="newsletter-page" class="page-content hidden">
+            <div class="container section-padding">
+                <h1>The Newsletter</h1>
+                <p>Stay updated with the latest news and insights about Cuba and travel opportunities.</p>
+            </div>
+        </div>
+
+        <div id="blog-page" class="page-content hidden">
+            <div class="container section-padding">
+                <h1>The Cuba Blog</h1>
+                <p>Stories, insights, and updates from our team in Cuba.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Cuba Educational Travel</h5>
+                    <p>Legal and licensed educational travel to Cuba, fostering understanding between our two countries.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Contact</h5>
+                    <p>Email: <a href="mailto:info@cubaeducationaltravel.com">info@cubaeducationaltravel.com</a></p>
+                    <p>Licensed by Cuban and US governments</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Cuba Educational Travel. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal hidden" id="success-modal">
+        <div class="modal-content">
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for your inquiry. We'll get back to you soon.</p>
+            <button class="btn btn--primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
